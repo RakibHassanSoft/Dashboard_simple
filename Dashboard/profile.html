@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/Style.css">
+    <title>Interactive Dashboard</title>
+   <style>
+    .imge1{
+        width: 500px;
+    }
+    form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #999;
+}
+#profile{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+   </style>
+</head>
+<body>
+    <!-- <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('analytics')">Analytics</a>
+        <a onclick="showPage('settings')">Settings</a>
+        <a onclick="showPage('profile')">Profile</a>
+    </div> -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="/Dashboard/home.html">User Home</a>
+      
+        <a href="/Dashboard/profile.html">Profile</a>
+        <a href="/Dashboard/about.html">About</a>
+        <hr>
+        <a href="../home.html">Home</a>
+    </div>
+    <div class="main-content">
+        <div class="navbar">Dashboard Navbar</div>
+
+
+        <div  class="page active">
+            <div class="card" id="profile">
+               <div>
+                   <img  class="imge1" src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=ejx13G9ZroRrcg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-young-user-icon-2400.png&ehk=NNF6zZUBr0n5i%2fx0Bh3AMRDRDrzslPXB0ANabkkPyv0%3d&risl=&pid=ImgRaw&r=0" alt="">
+               </div>
+               <form action="">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" placeholder="Kuddus" id="first-name" disabled> <br>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" placeholder="Ali" id="last-name" disabled> <br>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Kuddus@gmail.com" id="email" disabled> <br>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+   
+ 
+</html>

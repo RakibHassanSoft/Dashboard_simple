@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/Style.css">
+    <title>Interactive Dashboard</title>
+    
+</head>
+<body>
+    <!-- header 
+     -->
+     <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="/Dashboard/home.html">User Home</a>
+      
+        <a href="/Dashboard/profile.html">Profile</a>
+        <a href="/Dashboard/about.html">About</a>
+        <hr>
+        <a href="../home.html">Home</a>
+    </div>
+    <div class="main-content">
+        <div class="navbar">Dashboard Navbar</div>
+
+        <div id="home" class="page active">
+            <div class="card">
+                <h3>Home</h3>
+                <p>Welcome to the home page!</p>
+            </div>
+        </div>
+
+       
+
+
+    </div>
+
+   
+    <script>
+       
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                if (page.id === pageId) {
+                    page.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

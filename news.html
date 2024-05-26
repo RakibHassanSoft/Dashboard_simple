@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .news-section {
+            padding: 20px;
+        }
+        .news-article {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .news-article h2 {
+            margin-top: 0;
+        }
+        .news-article p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./Dashboard/home.html">Dashboard</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+    </nav>
+    <div class="news-section">
+        <div class="news-article">
+            <h2>Article Title 1</h2>
+            <p>Published on May 26, 2024</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Morbi auctor orci eu quam fermentum, a sollicitudin velit dictum.</p>
+        </div>
+        <div class="news-article">
+            <h2>Article Title 2</h2>
+            <p>Published on May 25, 2024</p>
+            <p>Proin ullamcorper, nunc non faucibus tincidunt, libero nulla volutpat magna, a euismod arcu nisi nec sapien. Aliquam erat volutpat.</p>
+        </div>
+        <div class="news-article">
+            <h2>Article Title 3</h2>
+            <p>Published on May 24, 2024</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 News Page. All rights reserved.
+    </footer>
+</body>
+</html>

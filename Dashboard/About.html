@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/Style.css">
+    <title>Interactive Dashboard</title>
+    <style>
+        
+.about-container {
+
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="/Dashboard/home.html">User Home</a>
+      
+        <a href="/Dashboard/profile.html">Profile</a>
+        <a href="/Dashboard/about.html">About</a>
+        <hr>
+        <a href="../home.html">Home</a>
+    </div>
+    <div class="main-content">
+        <div class="navbar">Dashboard Navbar</div>
+
+        <div id="about" class="page active">
+            <div class="about-container">
+                <h1>About Me</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Kudush ali</h2>
+                        <p>Hello! I'm Kudush ali, a passionate web developer with a love for creating dynamic and user-friendly websites. I have over 5 years of experience in the industry and have worked on a variety of projects, ranging from small business websites to large e-commerce platforms.</p>
+                        <p>My expertise includes HTML, CSS, JavaScript, and various modern web frameworks. I enjoy working with clients to bring their ideas to life and strive to deliver high-quality, performant, and accessible web solutions.</p>
+                        <p>When I'm not coding, I enjoy hiking, photography, and exploring new technologies. Feel free to get in touch if you'd like to collaborate or just chat about web development!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+   
+    <script>
+       
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                if (page.id === pageId) {
+                    page.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
